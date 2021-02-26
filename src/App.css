@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background-color: #4b00ad;
+  overflow-x: hidden; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ******************************************************************************************************** */
+
+.navbar {
+  background-color: #4b00ad;
+  margin-top: 10px
+}
+.navbar-brand {
+  /* background-image: linear-gradient(150deg,rgb(253, 175, 30) 0%,#e2c107 20%,#d19004 40%,  #cc06fd 60%, #e204f7 80%,#ee0498 100%);  */
+  background-image: linear-gradient(to right, #f9a323 0%, #ff4e50 100%);
+  border: 2px solid white;
+  padding: 13px 52px;
+  margin-top: 10px;
+  margin-left: -32px;
+  font-size: 27px;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-nav li {
+  margin: 0px 20px;
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.navbar-nav li a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ************************************************************************************************************* */
+
+.homecontainer {
+  width: 100%;
+  height: 86.9%;
+  position: absolute;
+  /* background-image: linear-gradient(150deg, #4b00ad 0%, #4b00ad 20%, #4b00ad 40%); */
+  left: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subContainer {
+  border: 2px solid white;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 1.5vh;
+  background-image: linear-gradient(to right, #f9a323 0%, #ff4e50 100%);
+}
+
+.info {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+}
+
+.info h1 {
+  font-size: 120px;
+}
+
+.info button {
+  color: white;
+  margin: 10px;
+  padding: 10px 30px;
+  width: 45%;
+  background-color: #4b00ad;
+  border: 1px solid white;
+}
+
+/* **************************************************************************************************************** */
+
+.aboutContainer {
+  /* border: 2px dotted white; */
+  box-shadow: 2px 2px 3px white,
+              2px 2px 10px white;
+    position: absolute;
+    width: 80vw;
+    padding: 50px 69px;
+    padding-top: 30px;
+    top: 18%;
+    left: 11%;
+}
+
+
+.textYellow{
+  color: #f9a323;
+  font-size: 30px;
+}
+
+.aboutContainer h3{
+  margin: 20px ;
+  font-size: 44px;
+}
+
+.aboutContainer li {
+  font-size: 22px;
+  margin: 10px;
+  margin-left: 100px;
+}
+
+/* ************************************************************************************************************* */
+
+.register {
+  background-color: white;
+  /* width: 80vh; */
+  /* height: 70vh; */
+  padding: 26px 20px;
+  padding-bottom: 50px;
+}
+
+.text-primary {
+  color: #f9a323;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to right, #f9a323 0%, #ff4e50 100%);
+  border: #f9a323;
+}
+
+
+.customform {
+  padding: 0px;
+  /* border: 2px solid rgba(0, 132, 255, 0.795); */
+  height: 85vh;
+  /* box-shadow: -2px 2px 3px grey, 2px 2px 3px grey, */
+  /* -10px 10px 10px rgb(187, 187, 187); */
+}
+
+.customformContainer {
+  background-color: white;
+  padding: 25px 100px;
+}
+
+.customHome {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contactFormheading {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .cardcustom {
+} */
+
+.cardcustom :hover div {
+  transition: 800ms;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.contactContainer {
+  max-height: 80vh;
+  margin: 4px, 10px;
+  padding: 4px;
+  background-color: #4b00ad;
+  width: 550px;
+  height: 73vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
 }
